@@ -1,0 +1,15 @@
+/* For Form Validations */
+ /* For Input Fields */
+ input.ng-invalid.ng-touched{
+    border: 2px solid red;
+  }
+   /* For buttons */
+   input[disabled="disabled"]{
+     opacity:0.4;
+     cursor:not-allowed !important;
+   }
+
+   .card{
+     border: 2px solid black;
+   }
+  

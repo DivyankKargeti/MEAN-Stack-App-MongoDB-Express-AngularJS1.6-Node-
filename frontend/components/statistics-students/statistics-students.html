@@ -1,0 +1,63 @@
+<div class="container">
+    <div class="jumbotron">
+        <h3>Search Stats</h3>
+        <form>
+            <div class="row">
+              <div class="col">
+                <p><strong>Aggregate by branch to get toppers</strong></p>
+                <input type="text" class="form-control mb-3" placeholder="Enter branch( IoT, FSE, MSE, CCVT, OSOS )" ng-model="vm.branch">
+                <input type="submit" class="btn btn-success" value="Go..." ng-click="vm.aggreBranch()">
+              </div>
+              <div class="col">
+                <p><strong>Aggregate toppers of a branch in a subject</strong></p>
+                <input type="text" class="form-control mb-3" placeholder="Enter branch( IoT, FSE, MSE, CCVT, OSOS )" ng-model="vm.branchname">
+                <input type="text" class="form-control mb-3" placeholder="Enter subject( Maths, English, Science )" ng-model="vm.subject">
+                <input type="submit" class="btn btn-success" value="Go..." ng-click="vm.aggreBranchSubj()">
+              </div>
+              </div>
+            </div>
+          </form>          
+    </div>
+</div>
+
+<div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-4" ng-repeat="stat in vm.stats">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+              <p class="card-text">
+                <strong>Name: </strong>{{ stat._id | nameCapital }} <br/>
+                <strong>totalMarks:: </strong>{{ stat.totalMarks }} <br/>
+                <strong>outOf: </strong>{{ stat.outOf }} <br/>
+                <strong>percentage: </strong>{{ stat.percentage }} <br/>
+              </p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-4" ng-repeat="stat in vm.stats2">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+              <p class="card-text">
+                <strong>Name: </strong>{{ stat._id.name }} <br/>
+                <strong>branch: </strong>{{ stat._id.branch }} <br/>
+                <strong>subject: </strong>{{ stat._id.subject }} <br/>
+                <strong>marks: </strong>{{ stat._id.marks }} <br/>
+              </p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>

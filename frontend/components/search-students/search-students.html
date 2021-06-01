@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="jumbotron">
+        <h3>Search Students</h3>
+        <form>
+            <div class="row">
+              <div class="col">
+                <input type="text" class="form-control mb-3" placeholder="Enter rollNo" ng-model="vm.rollNo">
+                <input type="submit" class="btn btn-primary" value="Search Single" ng-click="vm.searchSingle()">
+              </div>
+              <div class="col">
+                <input type="text" class="form-control mb-3" placeholder="Enter rollNos separated by comma" ng-model="vm.rollNos">
+                <input type="submit" class="btn btn-primary" value="Search Multiple" ng-click="vm.searchMulti()">
+              </div>
+            </div>
+          </form>          
+    </div>
+</div>
+
+<div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-4" ng-repeat="student in vm.students">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+              <p class="card-text">
+                <strong>rollNo: </strong>{{ student.rollNo }} <br/>
+                <strong>Name: </strong>{{ student.name | nameCapital }} <br/>
+                <strong>Branch: </strong>{{ student.branch }} <br/>
+                <strong>email: </strong>{{ student.email }} <br/>
+                <strong>Marks: </strong>
+                    <li>{{ student.subjectMarks[0].subject + ' : ' + student.subjectMarks[0].marks }}<br/></li>
+                    <li>{{ student.subjectMarks[1].subject + ' : ' + student.subjectMarks[1].marks }}<br/></li>
+                    <li>{{ student.subjectMarks[2].subject + ' : ' + student.subjectMarks[2].marks }}<br/></li>
+              </p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>

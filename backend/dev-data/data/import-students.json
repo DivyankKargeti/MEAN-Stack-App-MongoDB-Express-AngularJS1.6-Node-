@@ -1,0 +1,112 @@
+[
+  {
+    "rollNo":1,
+    "name":"Divyank Kargeti",
+    "branch": "IoT",
+    "email": "dk1999@gmail.com",
+    "subjectMarks": [ 
+      { "subject": "Maths", "marks": 98 }, 
+      { "subject": "English", "marks": 85 },
+      { "subject": "Science", "marks": 75 }
+    ]
+  },
+  {
+    "rollNo":2,
+    "name":"Dhawal Kumar",
+    "branch": "IoT",
+    "email": "dhawal@gmail.com",
+    "subjectMarks": [ 
+      { "subject": "Maths", "marks": 78 }, 
+      { "subject": "English", "marks": 96 },
+      { "subject": "Science", "marks": 50 }
+    ]
+  },
+  {
+    "rollNo":3,
+    "name":"Anuj Pandey",
+    "branch": "IoT",
+    "email": "anuj@gmail.com",
+    "subjectMarks": [ 
+      { "subject": "Maths", "marks": 98 }, 
+      { "subject": "English", "marks": 45 },
+      { "subject": "Science", "marks": 78 }
+    ]
+  },
+  {
+    "rollNo":4,
+    "name":"Shubham Gupta",
+    "branch": "FSE",
+    "email": "shubham@gmail.com",
+    "subjectMarks": [ 
+      { "subject": "Maths", "marks": 45 }, 
+      { "subject": "English", "marks": 78 },
+      { "subject": "Science", "marks": 65 }
+    ]
+  },
+  {
+    "rollNo":5,
+    "name":"Amit Sharma",
+    "branch": "FSE",
+    "email": "amit@gmail.com",
+    "subjectMarks": [ 
+      { "subject": "Maths", "marks": 72 }, 
+      { "subject": "English", "marks": 95 },
+      { "subject": "Science", "marks": 62 }
+    ]
+  },
+  {
+    "rollNo":6,
+    "name":"Zia Haider",
+    "branch": "CCVT",
+    "email": "zia@gmail.com",
+    "subjectMarks": [ 
+      { "subject": "Maths", "marks": 98 }, 
+      { "subject": "English", "marks": 90 },
+      { "subject": "Science", "marks": 88 }
+    ]
+  },
+  {
+    "rollNo":7,
+    "name":"Sagar Tyagi",
+    "branch": "MSE",
+    "email": "sagar@gmail.com",
+    "subjectMarks": [ 
+      { "subject": "Maths", "marks": 77 }, 
+      { "subject": "English", "marks": 52 },
+      { "subject": "Science", "marks": 89 }
+    ]
+  },
+  {
+    "rollNo":8,
+    "name":"Udit Kumar",
+    "branch": "MSE",
+    "email": "udit@gmail.com",
+    "subjectMarks": [ 
+      { "subject": "Maths", "marks": 74 }, 
+      { "subject": "English", "marks": 65 },
+      { "subject": "Science", "marks": 85 }
+    ]
+  },
+  {
+    "rollNo":9,
+    "name":"Abhinav Sharma",
+    "branch": "OSOS",
+    "email": "abhinav@gmail.com",
+    "subjectMarks": [ 
+      { "subject": "Maths", "marks": 98 }, 
+      { "subject": "English", "marks": 85 },
+      { "subject": "Science", "marks": 75 }
+    ]
+  },
+  {
+    "rollNo":10,
+    "name":"Abhishek Sharma",
+    "branch": "IoT",
+    "email": "abhisharma@gmail.com",
+    "subjectMarks": [ 
+      { "subject": "Maths", "marks": 85 }, 
+      { "subject": "English", "marks": 45 },
+      { "subject": "Science", "marks": 96 }
+    ]
+  }
+]

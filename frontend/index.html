@@ -1,0 +1,42 @@
+<html lang="en" ng-app="myApp">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MEAN STACK APP</title>
+        <!-- Bootstrap CDN -->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+        <!-- AngularJS CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js" integrity="sha512-Us1MTv7/lzaM0GzbeWQschX8b+8dhj7v/9aEdDLC1XDDQ6IYN9fLRSvNTss6Gkx7gCN1cmqHD0GQN85Kk95zjg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- Angular ui-router -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.29/angular-ui-router.min.js" integrity="sha512-pqaTGP67/KI6BZh2w8MfiBDyn4CtkDMiSZrqtiV7KAcCWwnncwvUM3UDCecIAJH6BDL8/py0N1ka3rMI5+7+rg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script> -->
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="content/css/style.css" >
+    </head>
+    <body ng-controller="mainCtrl as vm">
+        
+        <!-- Navbar -->
+        <header>
+            <ng-include src="'utils/header.html'" />
+        </header>
+        
+        <!-- directive to render view a route -->
+        <ui-view></ui-view>
+      
+        <!-- Loading our Main module -->
+        <script src="app.js"></script>
+        <!-- Loading Components -->
+        <script src="components/students-list/students-list.component.js"></script>
+        <script src="components/search-students/search-students.component.js"></script>
+        <script src="components/statistics-students/statistics-students.component.js"></script>
+    </body>
+</html>
